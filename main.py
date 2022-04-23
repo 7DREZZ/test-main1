@@ -1,17 +1,58 @@
-import random
-from random import randint
-a = random.randrange(1,10)
-random_list_of_nums = []
+def is_factor1(a, b):
+    if b % a == 0:
+        return b/a
+    else:
+        return 'False'
+def is_factor2(a, b):
+    if b % a == 0:
+        return b/a
+    else:
+        return 'False'
+def is_factor3(a, b):
+    if b % a == 0:
+        return b/a
+    else:
+        return 'False'
+def is_factor4(a, b):
+    if b % a == 0:
+        return b/a
+    else:
+        return 'False'
+def is_factor5(a, b):
+    if b % a == 0:
+        return b/a
+    else:
+        return 'False'
 
-for i in range(a):
-    random_list_of_nums.append(randint(1,99))
-print(random_list_of_nums, "- начальное яблоко")
+def is_multiple1(a, b):
+    if a % b == 0:
+        return a/b
+    else:
+        return 'False'
+def is_multiple2(a, b):
+    if a % b == 0:
+        return a/b
+    else:
+        return 'False'
+def is_multiple3(a, b):
+    if a % b == 0:
+        return a/b
+    else:
+        return 'False'
+def is_multiple4(a, b):
+    if a % b == 0:
+        return a/b
+    else:
+        return 'False'
+def is_multiple5(a, b):
+    if a % b == 0:
+        return a/b
+    else:
+        return 'False'
 
-for i in range(a-1):
-    for j in range(a-i-1):
-        if random_list_of_nums[j] > random_list_of_nums[j + 1]:
-            random_list_of_nums[j], random_list_of_nums[j+1] = random_list_of_nums[j+1], random_list_of_nums[j]
+def num_digits(a, b):
+    if a % b == 0:
+        return a/b
+    else:
+        return 'False'
 
-print(random_list_of_nums, "- конечное яблоко")
-print("Наименьшее число:", random_list_of_nums[0])
-print("Наибольшее число:", random_list_of_nums[-1])
